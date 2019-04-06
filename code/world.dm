@@ -4,7 +4,7 @@
 	area = /area/space
 	view = "15x15"
 	cache_lifespan = 30
-	fps = 1
+	fps = 45
 
 
 
