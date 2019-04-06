@@ -35,7 +35,7 @@
 	var/protect_roles_from_antagonist = 0// If security and such can be tratior/cult/other
 	var/continous_rounds = 0			// Gamemodes which end instantly will instead keep on going until the round ends by escape shuttle or nuke.
 	var/popup_admin_pm = 0				//adminPMs to non-admins show in a pop-up 'reply' window when set to 1.
-	var/fps = 14
+	var/fps = 45
 
 	var/achievement_hub = null
 	var/achievement_password = null
