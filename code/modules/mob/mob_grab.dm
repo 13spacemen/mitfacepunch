@@ -26,7 +26,7 @@
 			viewers(user) << "\red <b>[user] is being strangled by [affecting.name]! It looks like \he's trying to commit suicide; somehow...</b>"
 		return (OXYLOSS)
 
-/obj/item/weapon/grab/proc/throw()
+/obj/item/weapon/grab/proc/Throw()
 
 	if(affecting)
 		if(state >= 2)

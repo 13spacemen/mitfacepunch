@@ -81,7 +81,7 @@ However note the job specific items are all here
 		if(!item_data)
 			items = replacetext(ticker.mode.uplink_items, "\n", "")	// Getting the text string of items
 		else
-			items = replacetext(item_data)
+			items = item_data
 		ItemList = text2list(src.items, ";")	// Parsing the items text string
 		uses = ticker.mode.uplink_uses
 		//sec_code = rand(99999)//Sets the code at spawn, in theory should be random
