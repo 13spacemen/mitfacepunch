@@ -4791,7 +4791,7 @@
 "bOg" = (/turf/unsimulated/wall{icon_state = "plasma1"},/area/alien)
 "bOh" = (/obj/item/weapon/paper{info = "Some stuff is missing..."; name = "Insert alien artifacts here."},/turf/unsimulated/floor{icon_state = "floor5"},/area/alien)
 "bOi" = (/obj/machinery/door/airlock/hatch,/turf/unsimulated/floor{icon_state = "floor5"},/area/alien)
-"bOj" = (/turf/unsimulated/wall/splashscreen{icon_state = "title2"},/area/start)
+"bOj" = (/turf/unsimulated/wall/splashscreen,/area/start)
 "bOk" = (/obj/structure/closet/acloset,/turf/unsimulated/floor{icon_state = "floor5"},/area/alien)
 "bOl" = (/turf/unsimulated/wall{icon_state = "plasma2"},/area/alien)
 "bOm" = (/turf/space,/area/shuttle/alien/base)
