@@ -3,7 +3,7 @@
 	stat = DEAD
 	/*
 	canmove = 0
-	if(blind)	blind.layer = 0
+	if(blind)	client.screen -= blind
 	*/
 	sight |= SEE_TURFS|SEE_MOBS|SEE_OBJS
 	see_in_dark = 8
