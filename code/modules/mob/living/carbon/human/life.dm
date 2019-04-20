@@ -922,8 +922,8 @@
 
 			/*
 			if(blind)
-				if(blinded)		client.screen += blind
-				else			client.screen -= blind
+				if(blinded)		blind.layer = 18
+				else			blind.layer = 0
 			*/
 			
 			if( disabilities & NEARSIGHTED && !istype(glasses, /obj/item/clothing/glasses/regular) )

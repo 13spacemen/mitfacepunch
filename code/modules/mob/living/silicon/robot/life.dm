@@ -215,9 +215,9 @@
 	/*
 	if ((src.blind && src.stat != 2))
 		if(src.blinded)
-			src.client.screen += blind
+			src.blind.layer = 18
 		else
-			src.client.screen -= blind
+			src.blind.layer = 0
 			if (src.disabilities & NEARSIGHTED)
 				src.client.screen += global_hud.vimpaired
 

@@ -49,7 +49,7 @@
 			O.show_message("<b>The [name]</b> lets out a faint chimper as it collapses and stops moving...", 1) //ded -- Urist
 
 	update_canmove()
-	if(blind)	client.screen -= blind
+	if(blind)	blind.layer = 0
 
 	ticker.mode.check_win()
 
