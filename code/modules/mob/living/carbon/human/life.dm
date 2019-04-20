@@ -920,10 +920,12 @@
 					if(260 to 280)			bodytemp.icon_state = "temp-3"
 					else					bodytemp.icon_state = "temp-4"
 
+			/*
 			if(blind)
 				if(blinded)		blind.layer = 18
 				else			blind.layer = 0
-
+			*/
+			
 			if( disabilities & NEARSIGHTED && !istype(glasses, /obj/item/clothing/glasses/regular) )
 				client.screen += global_hud.vimpaired
 			if(eye_blurry)			client.screen += global_hud.blurry

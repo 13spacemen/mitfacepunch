@@ -212,7 +212,7 @@
 //	if (src.fire) src.fire.icon_state = "fire[src.fire_alert ? 1 : 0]"
 
 	client.screen.Remove(global_hud.blurry,global_hud.druggy,global_hud.vimpaired)
-
+	/*
 	if ((src.blind && src.stat != 2))
 		if(src.blinded)
 			src.blind.layer = 18
@@ -226,7 +226,8 @@
 
 			if (src.druggy)
 				src.client.screen += global_hud.druggy
-
+	*/
+	handle_hud_vision()
 	if (src.stat != 2)
 		if (src.machine)
 			if (!( src.machine.check_eye(src) ))
