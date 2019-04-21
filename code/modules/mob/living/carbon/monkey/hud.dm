@@ -12,7 +12,7 @@
 	using.icon = ui_style
 	using.icon_state = (mymob.a_intent == "hurt" ? "harm" : mymob.a_intent)
 	using.screen_loc = ui_acti
-	using.layer = 20
+	using.layer = 21
 	src.adding += using
 	action_intent = using
 
@@ -22,7 +22,7 @@
 	using.icon = ui_style
 	using.icon_state = (mymob.m_intent == "run" ? "running" : "walking")
 	using.screen_loc = ui_movi
-	using.layer = 20
+	using.layer = 21
 	src.adding += using
 	move_intent = using
 
@@ -31,7 +31,6 @@
 	using.icon = ui_style
 	using.icon_state = "act_drop"
 	using.screen_loc = ui_drop_throw
-	using.layer = 19
 	src.adding += using
 
 	inv_box = new /obj/screen/inventory()
@@ -43,7 +42,6 @@
 		inv_box.icon_state = "hand_active"
 	inv_box.screen_loc = ui_rhand
 	inv_box.slot_id = slot_r_hand
-	inv_box.layer = 19
 	src.r_hand_hud_object = inv_box
 	src.adding += inv_box
 
@@ -56,7 +54,6 @@
 		inv_box.icon_state = "hand_active"
 	inv_box.screen_loc = ui_lhand
 	inv_box.slot_id = slot_l_hand
-	inv_box.layer = 19
 	src.l_hand_hud_object = inv_box
 	src.adding += inv_box
 
@@ -66,7 +63,6 @@
 	using.icon = ui_style
 	using.icon_state = "hand1"
 	using.screen_loc = ui_swaphand1
-	using.layer = 19
 	src.adding += using
 
 	using = new /obj/screen()
@@ -75,7 +71,6 @@
 	using.icon = ui_style
 	using.icon_state = "hand2"
 	using.screen_loc = ui_swaphand2
-	using.layer = 19
 	src.adding += using
 
 	inv_box = new /obj/screen/inventory()
@@ -85,7 +80,6 @@
 	inv_box.icon_state = "equip"
 	inv_box.screen_loc = ui_monkey_mask
 	inv_box.slot_id = slot_wear_mask
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -95,7 +89,6 @@
 	inv_box.icon_state = "equip"
 	inv_box.screen_loc = ui_back
 	inv_box.slot_id = slot_back
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	mymob.throw_icon = new /obj/screen()

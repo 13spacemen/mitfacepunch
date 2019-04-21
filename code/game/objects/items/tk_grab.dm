@@ -8,7 +8,7 @@
 	flags = USEDELAY
 	//item_state = null
 	w_class = 10.0
-	layer = 20
+	layer = 21
 
 	var/last_throw = 0
 	var/obj/focus = null

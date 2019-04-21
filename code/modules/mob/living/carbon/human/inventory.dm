@@ -209,7 +209,7 @@
 			src << "\red You are trying to eqip this item to an unsupported inventory slot. How the heck did you manage that? Stop it..."
 			return
 
-	W.layer = 20
+	W.layer = 21
 
 	return
 

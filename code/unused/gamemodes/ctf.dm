@@ -32,25 +32,25 @@
 					M << "You are in the Red Team!"
 					del(M.wear_suit)
 					M.w_uniform = new /obj/item/clothing/under/color/red(M)
-					M.w_uniform.layer = 20
+					M.w_uniform.layer = 21
 					del(M.shoes)
 					M.wear_suit = new /obj/item/clothing/suit/armor/tdome/red(M)
-					M.wear_suit.layer = 20
+					M.wear_suit.layer = 21
 					M.shoes = new /obj/item/clothing/shoes/black(M)
-					M.shoes.layer = 20
+					M.shoes.layer = 21
 					M.wear_mask = new /obj/item/clothing/mask/gas/emergency(M)
-					M.wear_mask.layer = 20
+					M.wear_mask.layer = 21
 					M.gloves = new /obj/item/clothing/gloves/swat(M)
-					M.gloves.layer = 20
+					M.gloves.layer = 21
 					M.glasses = new /obj/item/clothing/glasses/thermal(M)
-					M.glasses.layer = 20
+					M.glasses.layer = 21
 					var/obj/item/device/radio/headset/H = new /obj/item/device/radio/headset(M)
 					H.set_frequency(1465)
 					M.w_radio = H
-					M.w_radio.layer = 20
+					M.w_radio.layer = 21
 					var/obj/item/weapon/tank/air/O = new /obj/item/weapon/tank/air(M)
 					M.back = O
-					M.back.layer = 20
+					M.back.layer = 21
 					M.internal = O
 
 					del(M.wear_id)
@@ -60,7 +60,7 @@
 					W.assignment = "Red Team"
 					W.registered_name = M.real_name
 					M.wear_id = W
-					M.wear_id.layer = 20
+					M.wear_id.layer = 21
 					if(R)
 						M.loc = R.loc
 					else
@@ -72,25 +72,25 @@
 					M << "You are in the Green Team!"
 					del(M.wear_suit)
 					M.w_uniform = new /obj/item/clothing/under/color/green(M)
-					M.w_uniform.layer = 20
+					M.w_uniform.layer = 21
 					del(M.shoes)
 					M.wear_suit = new /obj/item/clothing/suit/armor/tdome/green(M)
-					M.wear_suit.layer = 20
+					M.wear_suit.layer = 21
 					M.shoes = new /obj/item/clothing/shoes/black(M)
-					M.shoes.layer = 20
+					M.shoes.layer = 21
 					M.wear_mask = new /obj/item/clothing/mask/gas/emergency(M)
-					M.wear_mask.layer = 20
+					M.wear_mask.layer = 21
 					M.gloves = new /obj/item/clothing/gloves/swat(M)
-					M.gloves.layer = 20
+					M.gloves.layer = 21
 					M.glasses = new /obj/item/clothing/glasses/thermal(M)
-					M.glasses.layer = 20
+					M.glasses.layer = 21
 					var/obj/item/device/radio/headset/H = new /obj/item/device/radio/headset(M)
 					H.set_frequency(1449)
 					M.w_radio = H
-					M.w_radio.layer = 20
+					M.w_radio.layer = 21
 					var/obj/item/weapon/tank/air/O = new /obj/item/weapon/tank/air(M)
 					M.back = O
-					M.back.layer = 20
+					M.back.layer = 21
 					M.internal = O
 
 					del(M.wear_id)
@@ -100,7 +100,7 @@
 					W.assignment = "Green Team"
 					W.registered_name = M.real_name
 					M.wear_id = W
-					M.wear_id.layer = 20
+					M.wear_id.layer = 21
 					if(G)
 						M.loc = G.loc
 					else

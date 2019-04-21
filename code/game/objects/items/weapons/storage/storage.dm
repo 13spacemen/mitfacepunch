@@ -104,7 +104,7 @@
 	src.boxes.screen_loc = "[tx]:,[ty] to [mx],[my]"
 	for(var/obj/O in src.contents)
 		O.screen_loc = "[cx],[cy]"
-		O.layer = 20
+		O.layer = 21
 		cx++
 		if (cx > mx)
 			cx = tx
@@ -122,7 +122,7 @@
 		for(var/datum/numbered_display/ND in display_contents)
 			ND.sample_object.screen_loc = "[cx]:16,[cy]:16"
 			ND.sample_object.maptext = "<font color='white'>[(ND.number > 1)? "[ND.number]" : ""]</font>"
-			ND.sample_object.layer = 20
+			ND.sample_object.layer = 21
 			cx++
 			if (cx > (4+cols))
 				cx = 4
@@ -131,7 +131,7 @@
 		for(var/obj/O in contents)
 			O.screen_loc = "[cx]:16,[cy]:16"
 			O.maptext = ""
-			O.layer = 20
+			O.layer = 21
 			cx++
 			if (cx > (4+cols))
 				cx = 4
@@ -277,7 +277,7 @@
 		if(ismob(loc))
 			W.dropped(usr)
 		if(ismob(new_location))
-			W.layer = 20
+			W.layer = 21
 		else
 			W.layer = initial(W.layer)
 		W.loc = new_location
@@ -401,11 +401,10 @@
 	src.boxes.master = src
 	src.boxes.icon_state = "block"
 	src.boxes.screen_loc = "7,7 to 10,8"
-	src.boxes.layer = 19
 	src.closer = new /obj/screen/close(  )
 	src.closer.master = src
 	src.closer.icon_state = "x"
-	src.closer.layer = 20
+	src.closer.layer = 21
 	orient2hud()
 	return
 

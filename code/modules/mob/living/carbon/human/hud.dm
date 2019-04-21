@@ -13,7 +13,7 @@
 	using.icon = ui_style
 	using.icon_state = (mymob.a_intent == "hurt" ? "harm" : mymob.a_intent)
 	using.screen_loc = ui_acti
-	using.layer = 20
+	using.layer = 21
 	src.adding += using
 	action_intent = using
 
@@ -23,7 +23,7 @@
 	using.icon = ui_style
 	using.icon_state = (mymob.m_intent == "run" ? "running" : "walking")
 	using.screen_loc = ui_movi
-	using.layer = 20
+	using.layer = 21
 	src.adding += using
 	move_intent = using
 
@@ -32,7 +32,6 @@
 	using.icon = ui_style
 	using.icon_state = "act_drop"
 	using.screen_loc = ui_drop_throw
-	using.layer = 19
 	src.hotkeybuttons += using
 
 	inv_box = new /obj/screen/inventory()
@@ -42,7 +41,6 @@
 	inv_box.slot_id = slot_w_uniform
 	inv_box.icon_state = "center"
 	inv_box.screen_loc = ui_iclothing
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -52,7 +50,6 @@
 	inv_box.slot_id = slot_wear_suit
 	inv_box.icon_state = "equip"
 	inv_box.screen_loc = ui_oclothing
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -64,7 +61,6 @@
 		inv_box.icon_state = "hand_active"
 	inv_box.screen_loc = ui_rhand
 	inv_box.slot_id = slot_r_hand
-	inv_box.layer = 19
 	src.r_hand_hud_object = inv_box
 	src.adding += inv_box
 
@@ -77,7 +73,6 @@
 		inv_box.icon_state = "hand_active"
 	inv_box.screen_loc = ui_lhand
 	inv_box.slot_id = slot_l_hand
-	inv_box.layer = 19
 	src.l_hand_hud_object = inv_box
 	src.adding += inv_box
 
@@ -87,7 +82,6 @@
 	using.icon = ui_style
 	using.icon_state = "hand1"
 	using.screen_loc = ui_swaphand1
-	using.layer = 19
 	src.adding += using
 
 	using = new /obj/screen/inventory()
@@ -96,7 +90,6 @@
 	using.icon = ui_style
 	using.icon_state = "hand2"
 	using.screen_loc = ui_swaphand2
-	using.layer = 19
 	src.adding += using
 
 	inv_box = new /obj/screen/inventory()
@@ -106,7 +99,6 @@
 	inv_box.icon_state = "id"
 	inv_box.screen_loc = ui_id
 	inv_box.slot_id = slot_wear_id
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -116,7 +108,6 @@
 	inv_box.icon_state = "equip"
 	inv_box.screen_loc = ui_mask
 	inv_box.slot_id = slot_wear_mask
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -126,7 +117,6 @@
 	inv_box.icon_state = "back"
 	inv_box.screen_loc = ui_back
 	inv_box.slot_id = slot_back
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -135,7 +125,6 @@
 	inv_box.icon_state = "pocket"
 	inv_box.screen_loc = ui_storage1
 	inv_box.slot_id = slot_l_store
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -144,7 +133,6 @@
 	inv_box.icon_state = "pocket"
 	inv_box.screen_loc = ui_storage2
 	inv_box.slot_id = slot_r_store
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -154,7 +142,6 @@
 	inv_box.icon_state = "belt"
 	inv_box.screen_loc = ui_sstore1
 	inv_box.slot_id = slot_s_store
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	using = new /obj/screen()
@@ -162,7 +149,6 @@
 	using.icon = ui_style
 	using.icon_state = "act_resist"
 	using.screen_loc = ui_pull_resist
-	using.layer = 19
 	src.hotkeybuttons += using
 
 	using = new /obj/screen()
@@ -170,7 +156,7 @@
 	using.icon = ui_style
 	using.icon_state = "other"
 	using.screen_loc = ui_inventory
-	using.layer = 20
+	using.layer = 21
 	src.adding += using
 
 	using = new /obj/screen()
@@ -178,7 +164,7 @@
 	using.icon = ui_style
 	using.icon_state = "act_equip"
 	using.screen_loc = ui_equip
-	using.layer = 20
+	using.layer = 21
 	src.adding += using
 
 	inv_box = new /obj/screen/inventory()
@@ -187,7 +173,6 @@
 	inv_box.icon_state = "gloves"
 	inv_box.screen_loc = ui_gloves
 	inv_box.slot_id = slot_gloves
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -196,7 +181,6 @@
 	inv_box.icon_state = "glasses"
 	inv_box.screen_loc = ui_glasses
 	inv_box.slot_id = slot_glasses
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -205,7 +189,6 @@
 	inv_box.icon_state = "ears"
 	inv_box.screen_loc = ui_ears
 	inv_box.slot_id = slot_ears
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -214,7 +197,6 @@
 	inv_box.icon_state = "hair"
 	inv_box.screen_loc = ui_head
 	inv_box.slot_id = slot_head
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -223,7 +205,6 @@
 	inv_box.icon_state = "shoes"
 	inv_box.screen_loc = ui_shoes
 	inv_box.slot_id = slot_shoes
-	inv_box.layer = 19
 	src.other += inv_box
 
 	inv_box = new /obj/screen/inventory()
@@ -232,7 +213,6 @@
 	inv_box.icon_state = "belt"
 	inv_box.screen_loc = ui_belt
 	inv_box.slot_id = slot_belt
-	inv_box.layer = 19
 	src.adding += inv_box
 
 	mymob.throw_icon = new /obj/screen()

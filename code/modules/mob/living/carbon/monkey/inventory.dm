@@ -91,7 +91,7 @@
 				if (istype(item, /obj/item/clothing/mask))
 					source.drop_item()
 					loc = target
-					item.layer = 20
+					item.layer = 21
 					target.wear_mask = item
 					item.loc = target
 		if("l_hand")
@@ -109,7 +109,7 @@
 				if (istype(item, /obj/item))
 					source.drop_item()
 					loc = target
-					item.layer = 20
+					item.layer = 21
 					target.l_hand = item
 					item.loc = target
 		if("r_hand")
@@ -127,7 +127,7 @@
 				if (istype(item, /obj/item))
 					source.drop_item()
 					loc = target
-					item.layer = 20
+					item.layer = 21
 					target.r_hand = item
 					item.loc = target
 		if("back")
@@ -145,7 +145,7 @@
 				if ((istype(item, /obj/item) && item.slot_flags & SLOT_BACK ))
 					source.drop_item()
 					loc = target
-					item.layer = 20
+					item.layer = 21
 					target.back = item
 					item.loc = target
 		if("handcuff")
@@ -223,6 +223,6 @@
 			usr << "\red You are trying to eqip this item to an unsupported inventory slot. How the heck did you manage that? Stop it..."
 			return
 
-	W.layer = 20
+	W.layer = 21
 
 	return
