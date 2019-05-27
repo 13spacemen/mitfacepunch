@@ -39,6 +39,10 @@
 	stat(null, "Round Duration: [round(hours)]h [round(mins)]m")
 	stat(null, "Intent: [a_intent]")
 	stat(null, "Move Mode: [m_intent]")
+	stat(null, "ST: [ST]")
+	stat(null, "IQ: [IQ]")
+	stat(null, "EN: [EN]")
+	stat(null, "DX: [DX]")
 	if(ticker && ticker.mode && ticker.mode.name == "AI malfunction")
 		var/datum/game_mode/malfunction/malf = ticker.mode
 		if(malf.endgame_started)

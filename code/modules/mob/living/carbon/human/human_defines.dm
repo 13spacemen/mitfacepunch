@@ -52,3 +52,8 @@
 	var/xylophone = 0 //For the spoooooooky xylophone cooldown
 
 	var/gender_ambiguous = 0 //if something goes wrong during gender reassignment this generates a line in examine
+
+	var/ST = 7  // Strength
+	var/IQ = 7  // Intelligence
+	var/EN = 7  // Endurance
+	var/DX = 7  // Dexterity
