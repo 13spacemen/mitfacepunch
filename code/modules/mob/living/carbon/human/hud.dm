@@ -7,11 +7,11 @@
 	var/obj/screen/using
 	var/obj/screen/inventory/inv_box
 
-	using = new /obj/screen()
+	using = new /obj/screen/intent()
 	using.name = "act_intent"
 	using.dir = SOUTHWEST
 	using.icon = ui_style
-	using.icon_state = (mymob.a_intent == "hurt" ? "harm" : mymob.a_intent)
+	using.update_icon()
 	using.screen_loc = ui_acti
 	using.layer = 21
 	src.adding += using

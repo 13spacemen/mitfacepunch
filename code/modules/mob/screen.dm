@@ -253,6 +253,30 @@
 				usr.hud_used.action_intent.icon_state = "[intent]"
 */
 
+/obj/screen/intent
+	name = "intent"
+	icon_state = "intent_help"
+	screen_loc = ui_acti
+	var/intent = I_HELP
+
+/obj/screen/intent/update_icon()
+	icon_state = "intent_[intent]"
+
+/obj/screen/intent/Click(var/location, var/control, var/params)
+	var/list/P = params2list(params)
+	var/icon_x = text2num(P["icon-x"])
+	var/icon_y = text2num(P["icon-y"])
+	intent = I_DISARM
+	if(icon_x <= world.icon_size/2)
+		if(icon_y <= world.icon_size/2)
+			intent = I_HURT
+		else
+			intent = I_HELP
+	else if(icon_y <= world.icon_size/2)
+		intent = I_GRAB
+	update_icon()
+	usr.a_intent = intent
+
 /obj/screen/Click(location, control, params)
 	if(!usr)	return
 	switch(name)
@@ -436,6 +460,7 @@
 		else
 			DblClick()
 	return
+
 
 /obj/screen/inventory/attack_hand(mob/user as mob)
 	user.attack_ui(slot_id)
